@@ -7,8 +7,6 @@
 
 module.exports = {
   findtop: function(req, res) {
-    var topFlights = FlightsService.top();
-    //TODO: Decorate json
-    res.jsonx(DecorateService.createResponse(topFlights));
-  },
+		SabreRESTService.topflights(req, res);
+	},
 };

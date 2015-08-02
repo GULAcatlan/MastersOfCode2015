@@ -7,6 +7,6 @@
 
 module.exports = {
 	findtop: function(req, res){
-		res.jsonx(DecorateService.createResponse(PlacesService.top()));
+		SabreRESTService.topplaces(req, res);
 	}
 };
