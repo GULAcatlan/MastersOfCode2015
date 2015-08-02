@@ -16,9 +16,13 @@ module.exports = {
    * Set the default database connection for models in the development       *
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
+  models: {
+    connection: 'sierMongoDB'
+  },
 
-  // models: {
-  //   connection: 'someMongodbServer'
-  // }
-
+  sabreAPI: {
+    application: "GuideMe",
+    clientID: "V1:ktdlntwv08gxtn2t:DEVCENTER:EXT",
+    clientSecret: "nF4iNvI6"
+  }
 };

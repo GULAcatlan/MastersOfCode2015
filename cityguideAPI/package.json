@@ -22,7 +22,9 @@
     "rc": "~0.5.0",
     "sails": "~0.11.0",
     "sails-disk": "~0.10.0",
-    "sails-mongo": "^0.11.2"
+    "sails-mongo": "^0.11.2",
+    "xml2json": "^0.8.1",
+    "mastercard-api":"git://github.com/MasterCard/mastercard-api-node.git"
   },
   "scripts": {
     "debug": "node debug app.js",
