@@ -7,6 +7,6 @@
 
 module.exports = {
   findtop: function(req, res) {
-		SabreRESTService.topflights(req, res);
+		SabreRESTService.topflight(req, res);
 	},
 };
