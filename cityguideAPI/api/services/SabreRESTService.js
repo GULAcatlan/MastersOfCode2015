@@ -75,11 +75,18 @@ module.exports = {
           delete jsonFinal.Links;
 
           if (jsonFinal.hasOwnProperty('errorCode')) {
-            console.log("Error", jsonFinal);
-            mobileResponse.status = {
-              code: 404,
-              message: "Something was wrong in the request"
-            };
+            if (jsonFinal.hasOwnProperty('message') && jsonFinal.message === "No results were found") {
+              mobileResponse.status = {
+                code: 200,
+                message: jsonFinal.message
+              };
+              mobileResponse.data = [];
+            } else {
+              mobileResponse.status = {
+                code: 404,
+                message: "Something was wrong in the request"
+              };
+            }
           } else {
             mobileResponse.status = {
               code: 200,
