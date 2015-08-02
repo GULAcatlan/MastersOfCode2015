@@ -75,6 +75,7 @@ module.exports = {
           delete jsonFinal.Links;
 
           if (jsonFinal.hasOwnProperty('errorCode')) {
+            console.log("Error", jsonFinal);
             mobileResponse.status = {
               code: 404,
               message: "Something was wrong in the request"

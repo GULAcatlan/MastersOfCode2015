@@ -67,7 +67,7 @@ module.exports = {
               if (!answer.hasOwnProperty("error")) {
                 sails.config.restAuth = answer;
               }else{
-                //FIXME: THIS IS HARMFUL!!! 
+                //FIXME: THIS IS HARMFUL!!!
                 getData();
               }
             });
