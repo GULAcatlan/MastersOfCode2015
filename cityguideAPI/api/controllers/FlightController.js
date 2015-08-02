@@ -9,4 +9,9 @@ module.exports = {
   findtop: function(req, res) {
 		SabreRESTService.topflight(req, res);
 	},
+	buyticket: function(req, res){
+		var mastercard = require('mastercard-api');
+		console.log(mastercard);
+		res.jsonx(mastercard);
+	}
 };
