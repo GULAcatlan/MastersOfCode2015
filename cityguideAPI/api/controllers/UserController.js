@@ -10,8 +10,6 @@ module.exports = {
 
   },
   create: function(req, res) {
-    console.log(User);
-    console.log("_________________________");
     User.native(function(err, UserCollection) {
       console.log(UserCollection);
       res.jsonx({
