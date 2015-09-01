@@ -6,12 +6,12 @@
 */
 
 module.exports = {
-  attributes: {
+  /*attributes: {
     name:{
       type: 'STRING'
     },
     code:{
       type: 'STRING'
     }
-  }
+  }*/
 };
